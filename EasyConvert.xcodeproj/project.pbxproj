@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACA5DB9916353D200018709E /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = ACA5DB9816353D200018709E /* Icon.icns */; };
+		ACA5DB9C16353D830018709E /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = ACA5DB9B16353D830018709E /* Readme */; };
+		ACA5DB9E16354B350018709E /* DropDone.png in Resources */ = {isa = PBXBuildFile; fileRef = ACA5DB9D16354B350018709E /* DropDone.png */; };
+		ACA5DBA0163554AC0018709E /* DropError.png in Resources */ = {isa = PBXBuildFile; fileRef = ACA5DB9F163554AC0018709E /* DropError.png */; };
 		ACBDC8A51634E1450095EF57 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBDC8A41634E1450095EF57 /* Cocoa.framework */; };
 		ACBDC8AF1634E1450095EF57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACBDC8AD1634E1450095EF57 /* InfoPlist.strings */; };
 		ACBDC8B11634E1450095EF57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBDC8B01634E1450095EF57 /* main.m */; };
@@ -17,6 +21,9 @@
 		ACBDC8C41634E1450095EF57 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBDC8A41634E1450095EF57 /* Cocoa.framework */; };
 		ACBDC8CC1634E1450095EF57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACBDC8CA1634E1450095EF57 /* InfoPlist.strings */; };
 		ACBDC8CF1634E1450095EF57 /* EasyConvertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBDC8CE1634E1450095EF57 /* EasyConvertTests.m */; };
+		ACBDC8DA1634E1710095EF57 /* ECDropFileView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBDC8D91634E1710095EF57 /* ECDropFileView.m */; };
+		ACBDC8F71635296B0095EF57 /* DropEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = ACBDC8F51635296B0095EF57 /* DropEmpty.png */; };
+		ACBDC8F81635296B0095EF57 /* DropFull.png in Resources */ = {isa = PBXBuildFile; fileRef = ACBDC8F61635296B0095EF57 /* DropFull.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ACA5DB9816353D200018709E /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Icon.icns; path = ../Icon.icns; sourceTree = "<group>"; };
+		ACA5DB9B16353D830018709E /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		ACA5DB9D16354B350018709E /* DropDone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DropDone.png; sourceTree = "<group>"; };
+		ACA5DB9F163554AC0018709E /* DropError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DropError.png; sourceTree = "<group>"; };
 		ACBDC8A01634E1450095EF57 /* EasyConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBDC8A41634E1450095EF57 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		ACBDC8A71634E1450095EF57 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -49,6 +60,10 @@
 		ACBDC8CB1634E1450095EF57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ACBDC8CD1634E1450095EF57 /* EasyConvertTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyConvertTests.h; sourceTree = "<group>"; };
 		ACBDC8CE1634E1450095EF57 /* EasyConvertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyConvertTests.m; sourceTree = "<group>"; };
+		ACBDC8D81634E1710095EF57 /* ECDropFileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECDropFileView.h; sourceTree = "<group>"; };
+		ACBDC8D91634E1710095EF57 /* ECDropFileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECDropFileView.m; sourceTree = "<group>"; };
+		ACBDC8F51635296B0095EF57 /* DropEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DropEmpty.png; sourceTree = "<group>"; };
+		ACBDC8F61635296B0095EF57 /* DropFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DropFull.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +129,14 @@
 		ACBDC8AA1634E1450095EF57 /* EasyConvert */ = {
 			isa = PBXGroup;
 			children = (
+				ACBDC8EC163526F40095EF57 /* Resources */,
 				ACBDC8B61634E1450095EF57 /* ECAppDelegate.h */,
 				ACBDC8B71634E1450095EF57 /* ECAppDelegate.m */,
 				ACBDC8B91634E1450095EF57 /* MainMenu.xib */,
 				ACBDC8AB1634E1450095EF57 /* Supporting Files */,
+				ACBDC8D81634E1710095EF57 /* ECDropFileView.h */,
+				ACBDC8D91634E1710095EF57 /* ECDropFileView.m */,
+				ACA5DB9B16353D830018709E /* Readme */,
 			);
 			path = EasyConvert;
 			sourceTree = "<group>";
@@ -125,6 +144,7 @@
 		ACBDC8AB1634E1450095EF57 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ACA5DB9816353D200018709E /* Icon.icns */,
 				ACBDC8AC1634E1450095EF57 /* EasyConvert-Info.plist */,
 				ACBDC8AD1634E1450095EF57 /* InfoPlist.strings */,
 				ACBDC8B01634E1450095EF57 /* main.m */,
@@ -151,6 +171,17 @@
 				ACBDC8CA1634E1450095EF57 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACBDC8EC163526F40095EF57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACA5DB9D16354B350018709E /* DropDone.png */,
+				ACBDC8F51635296B0095EF57 /* DropEmpty.png */,
+				ACBDC8F61635296B0095EF57 /* DropFull.png */,
+				ACA5DB9F163554AC0018709E /* DropError.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +259,12 @@
 				ACBDC8AF1634E1450095EF57 /* InfoPlist.strings in Resources */,
 				ACBDC8B51634E1450095EF57 /* Credits.rtf in Resources */,
 				ACBDC8BB1634E1450095EF57 /* MainMenu.xib in Resources */,
+				ACBDC8F71635296B0095EF57 /* DropEmpty.png in Resources */,
+				ACBDC8F81635296B0095EF57 /* DropFull.png in Resources */,
+				ACA5DB9916353D200018709E /* Icon.icns in Resources */,
+				ACA5DB9C16353D830018709E /* Readme in Resources */,
+				ACA5DB9E16354B350018709E /* DropDone.png in Resources */,
+				ACA5DBA0163554AC0018709E /* DropError.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +301,7 @@
 			files = (
 				ACBDC8B11634E1450095EF57 /* main.m in Sources */,
 				ACBDC8B81634E1450095EF57 /* ECAppDelegate.m in Sources */,
+				ACBDC8DA1634E1710095EF57 /* ECDropFileView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +383,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -369,7 +407,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -447,6 +485,7 @@
 				ACBDC8D41634E1450095EF57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACBDC8D51634E1450095EF57 /* Build configuration list for PBXNativeTarget "EasyConvertTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +494,7 @@
 				ACBDC8D71634E1450095EF57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
