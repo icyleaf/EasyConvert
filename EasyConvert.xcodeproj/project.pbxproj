@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACBDC8A51634E1450095EF57 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBDC8A41634E1450095EF57 /* Cocoa.framework */; };
+		ACBDC8AF1634E1450095EF57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACBDC8AD1634E1450095EF57 /* InfoPlist.strings */; };
+		ACBDC8B11634E1450095EF57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBDC8B01634E1450095EF57 /* main.m */; };
+		ACBDC8B51634E1450095EF57 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = ACBDC8B31634E1450095EF57 /* Credits.rtf */; };
+		ACBDC8B81634E1450095EF57 /* ECAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBDC8B71634E1450095EF57 /* ECAppDelegate.m */; };
+		ACBDC8BB1634E1450095EF57 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACBDC8B91634E1450095EF57 /* MainMenu.xib */; };
+		ACBDC8C31634E1450095EF57 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBDC8C21634E1450095EF57 /* SenTestingKit.framework */; };
+		ACBDC8C41634E1450095EF57 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBDC8A41634E1450095EF57 /* Cocoa.framework */; };
+		ACBDC8CC1634E1450095EF57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACBDC8CA1634E1450095EF57 /* InfoPlist.strings */; };
+		ACBDC8CF1634E1450095EF57 /* EasyConvertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBDC8CE1634E1450095EF57 /* EasyConvertTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACBDC8C51634E1450095EF57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBDC8971634E1440095EF57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBDC89F1634E1440095EF57;
+			remoteInfo = EasyConvert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACBDC8A01634E1450095EF57 /* EasyConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBDC8A41634E1450095EF57 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		ACBDC8A71634E1450095EF57 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		ACBDC8A81634E1450095EF57 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ACBDC8A91634E1450095EF57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ACBDC8AC1634E1450095EF57 /* EasyConvert-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EasyConvert-Info.plist"; sourceTree = "<group>"; };
+		ACBDC8AE1634E1450095EF57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ACBDC8B01634E1450095EF57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACBDC8B21634E1450095EF57 /* EasyConvert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyConvert-Prefix.pch"; sourceTree = "<group>"; };
+		ACBDC8B41634E1450095EF57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		ACBDC8B61634E1450095EF57 /* ECAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECAppDelegate.h; sourceTree = "<group>"; };
+		ACBDC8B71634E1450095EF57 /* ECAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECAppDelegate.m; sourceTree = "<group>"; };
+		ACBDC8BA1634E1450095EF57 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		ACBDC8C11634E1450095EF57 /* EasyConvertTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyConvertTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBDC8C21634E1450095EF57 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		ACBDC8C91634E1450095EF57 /* EasyConvertTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EasyConvertTests-Info.plist"; sourceTree = "<group>"; };
+		ACBDC8CB1634E1450095EF57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ACBDC8CD1634E1450095EF57 /* EasyConvertTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyConvertTests.h; sourceTree = "<group>"; };
+		ACBDC8CE1634E1450095EF57 /* EasyConvertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyConvertTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACBDC89D1634E1440095EF57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBDC8A51634E1450095EF57 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBDC8BD1634E1450095EF57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBDC8C31634E1450095EF57 /* SenTestingKit.framework in Frameworks */,
+				ACBDC8C41634E1450095EF57 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACBDC8951634E1440095EF57 = {
+			isa = PBXGroup;
+			children = (
+				ACBDC8AA1634E1450095EF57 /* EasyConvert */,
+				ACBDC8C71634E1450095EF57 /* EasyConvertTests */,
+				ACBDC8A31634E1450095EF57 /* Frameworks */,
+				ACBDC8A11634E1450095EF57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACBDC8A11634E1450095EF57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDC8A01634E1450095EF57 /* EasyConvert.app */,
+				ACBDC8C11634E1450095EF57 /* EasyConvertTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACBDC8A31634E1450095EF57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDC8A41634E1450095EF57 /* Cocoa.framework */,
+				ACBDC8C21634E1450095EF57 /* SenTestingKit.framework */,
+				ACBDC8A61634E1450095EF57 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACBDC8A61634E1450095EF57 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDC8A71634E1450095EF57 /* AppKit.framework */,
+				ACBDC8A81634E1450095EF57 /* CoreData.framework */,
+				ACBDC8A91634E1450095EF57 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		ACBDC8AA1634E1450095EF57 /* EasyConvert */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDC8B61634E1450095EF57 /* ECAppDelegate.h */,
+				ACBDC8B71634E1450095EF57 /* ECAppDelegate.m */,
+				ACBDC8B91634E1450095EF57 /* MainMenu.xib */,
+				ACBDC8AB1634E1450095EF57 /* Supporting Files */,
+			);
+			path = EasyConvert;
+			sourceTree = "<group>";
+		};
+		ACBDC8AB1634E1450095EF57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDC8AC1634E1450095EF57 /* EasyConvert-Info.plist */,
+				ACBDC8AD1634E1450095EF57 /* InfoPlist.strings */,
+				ACBDC8B01634E1450095EF57 /* main.m */,
+				ACBDC8B21634E1450095EF57 /* EasyConvert-Prefix.pch */,
+				ACBDC8B31634E1450095EF57 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACBDC8C71634E1450095EF57 /* EasyConvertTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDC8CD1634E1450095EF57 /* EasyConvertTests.h */,
+				ACBDC8CE1634E1450095EF57 /* EasyConvertTests.m */,
+				ACBDC8C81634E1450095EF57 /* Supporting Files */,
+			);
+			path = EasyConvertTests;
+			sourceTree = "<group>";
+		};
+		ACBDC8C81634E1450095EF57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDC8C91634E1450095EF57 /* EasyConvertTests-Info.plist */,
+				ACBDC8CA1634E1450095EF57 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACBDC89F1634E1440095EF57 /* EasyConvert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBDC8D21634E1450095EF57 /* Build configuration list for PBXNativeTarget "EasyConvert" */;
+			buildPhases = (
+				ACBDC89C1634E1440095EF57 /* Sources */,
+				ACBDC89D1634E1440095EF57 /* Frameworks */,
+				ACBDC89E1634E1440095EF57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyConvert;
+			productName = EasyConvert;
+			productReference = ACBDC8A01634E1450095EF57 /* EasyConvert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACBDC8C01634E1450095EF57 /* EasyConvertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBDC8D51634E1450095EF57 /* Build configuration list for PBXNativeTarget "EasyConvertTests" */;
+			buildPhases = (
+				ACBDC8BC1634E1450095EF57 /* Sources */,
+				ACBDC8BD1634E1450095EF57 /* Frameworks */,
+				ACBDC8BE1634E1450095EF57 /* Resources */,
+				ACBDC8BF1634E1450095EF57 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBDC8C61634E1450095EF57 /* PBXTargetDependency */,
+			);
+			name = EasyConvertTests;
+			productName = EasyConvertTests;
+			productReference = ACBDC8C11634E1450095EF57 /* EasyConvertTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACBDC8971634E1440095EF57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EC;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = icyleaf;
+			};
+			buildConfigurationList = ACBDC89A1634E1440095EF57 /* Build configuration list for PBXProject "EasyConvert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ACBDC8951634E1440095EF57;
+			productRefGroup = ACBDC8A11634E1450095EF57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACBDC89F1634E1440095EF57 /* EasyConvert */,
+				ACBDC8C01634E1450095EF57 /* EasyConvertTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACBDC89E1634E1440095EF57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBDC8AF1634E1450095EF57 /* InfoPlist.strings in Resources */,
+				ACBDC8B51634E1450095EF57 /* Credits.rtf in Resources */,
+				ACBDC8BB1634E1450095EF57 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBDC8BE1634E1450095EF57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBDC8CC1634E1450095EF57 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACBDC8BF1634E1450095EF57 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACBDC89C1634E1440095EF57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBDC8B11634E1450095EF57 /* main.m in Sources */,
+				ACBDC8B81634E1450095EF57 /* ECAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBDC8BC1634E1450095EF57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBDC8CF1634E1450095EF57 /* EasyConvertTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACBDC8C61634E1450095EF57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBDC89F1634E1440095EF57 /* EasyConvert */;
+			targetProxy = ACBDC8C51634E1450095EF57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACBDC8AD1634E1450095EF57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBDC8AE1634E1450095EF57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ACBDC8B31634E1450095EF57 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBDC8B41634E1450095EF57 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		ACBDC8B91634E1450095EF57 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBDC8BA1634E1450095EF57 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		ACBDC8CA1634E1450095EF57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBDC8CB1634E1450095EF57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACBDC8D01634E1450095EF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ACBDC8D11634E1450095EF57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ACBDC8D31634E1450095EF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyConvert/EasyConvert-Prefix.pch";
+				INFOPLIST_FILE = "EasyConvert/EasyConvert-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ACBDC8D41634E1450095EF57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyConvert/EasyConvert-Prefix.pch";
+				INFOPLIST_FILE = "EasyConvert/EasyConvert-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ACBDC8D61634E1450095EF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EasyConvert.app/Contents/MacOS/EasyConvert";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyConvert/EasyConvert-Prefix.pch";
+				INFOPLIST_FILE = "EasyConvertTests/EasyConvertTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		ACBDC8D71634E1450095EF57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EasyConvert.app/Contents/MacOS/EasyConvert";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyConvert/EasyConvert-Prefix.pch";
+				INFOPLIST_FILE = "EasyConvertTests/EasyConvertTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACBDC89A1634E1440095EF57 /* Build configuration list for PBXProject "EasyConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBDC8D01634E1450095EF57 /* Debug */,
+				ACBDC8D11634E1450095EF57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBDC8D21634E1450095EF57 /* Build configuration list for PBXNativeTarget "EasyConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBDC8D31634E1450095EF57 /* Debug */,
+				ACBDC8D41634E1450095EF57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACBDC8D51634E1450095EF57 /* Build configuration list for PBXNativeTarget "EasyConvertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBDC8D61634E1450095EF57 /* Debug */,
+				ACBDC8D71634E1450095EF57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACBDC8971634E1440095EF57 /* Project object */;
+}
