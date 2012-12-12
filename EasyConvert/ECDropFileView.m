@@ -10,7 +10,7 @@
 
 @interface ECDropFileView ()
 {
-    NSString *file;
+    NSArray *files;
 }
 
 - (void)hightlight:(BOOL)isHightlight;
@@ -52,16 +52,10 @@ static BOOL isDropOn = NO;
     NSPasteboard *pasteBoard = [sender draggingPasteboard];
     if ([[pasteBoard types] containsObject:NSFilenamesPboardType])
     {
-        NSArray *files = [pasteBoard propertyListForType:NSFilenamesPboardType];
-        for (NSString *fileName in files)
-        {
-            if ([[fileName pathExtension] isEqualToString:@"txt"])
-            {
-                file = fileName;
-                [self hightlight:YES];
-                return NSDragOperationGeneric;
-            }
-        }
+        NSArray *tmpfiles = [pasteBoard propertyListForType:NSFilenamesPboardType];
+        files = tmpfiles;
+        [self hightlight:YES];
+        return NSDragOperationGeneric;
     }
     
     return NSDragOperationNone;
@@ -71,9 +65,9 @@ static BOOL isDropOn = NO;
 {
     [self.indicator setHidden:NO];
     [self.indicator startAnimation:self];
-    if (file && [self openFile:file])
+    for (NSString *fileName in files)
     {
-        [self.dropButton setImage:dropDoneImage];
+        [self openFile:fileName];
     }
     
     return YES;
@@ -91,13 +85,12 @@ static BOOL isDropOn = NO;
 {
     NSOpenPanel *panel = [NSOpenPanel openPanel];
     
-    [panel setPrompt: NSLocalizedString(@"Select your plain text", "Preferences -> Open panel prompt")];
-    [panel setAllowsMultipleSelection: NO];
+    [panel setPrompt: NSLocalizedString(@"Select your file", "Preferences -> Open panel prompt")];
+    [panel setAllowsMultipleSelection: YES];
     [panel setCanChooseFiles: YES];
     [panel setCanChooseDirectories: NO];
-    [panel setCanCreateDirectories: NO];
+    [panel setCanCreateDirectories: YES];
     [panel setResolvesAliases:YES];
-    [panel setAllowedFileTypes:[NSArray arrayWithObjects:@"txt", nil]];
     
     void (^appOpenPanelHandler)(NSInteger) = ^( NSInteger resultCode )
     {
@@ -106,8 +99,11 @@ static BOOL isDropOn = NO;
             [self hightlight:YES];
             [self.indicator setHidden:NO];
             [self.indicator startAnimation:self];
-            
-            [self performSelector:@selector(openFile:) withObject:[[panel URL] path] afterDelay:0.4];
+
+            for (NSURL *fileName in panel.URLs)
+            {
+                [self performSelector:@selector(openFile:) withObject:[fileName path] afterDelay:0.4];
+            }
         }
     };
     
